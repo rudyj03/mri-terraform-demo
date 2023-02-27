@@ -49,7 +49,7 @@ resource "aws_instance" "web" {
   }
 
   connection {
-    host        = aws_instance.web[0].private_ip
+    host        = aws_instance.web[0].public_ip
     user        = "ubuntu"
     private_key = "${file("${var.private_key_path}")}"
   }

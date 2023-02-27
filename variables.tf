@@ -14,11 +14,12 @@ variable "region" {
 
 variable "identity" {
   description = "A unique name for your resources"
+  default     = "mri-demo"
 }
 
 variable "ami" {
   description = "The Amazon Machine Image for new instances."
-  default     = "ami-c62eaabe"
+  default     = "ami-0557a15b87f6559cf"
 }
 
 variable "ingress_cidr" {
